@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./intex.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Malappuram Doctor Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+                   <div  class="logo">Dr.Care</div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#doctors">Find Doctors</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Dr.Care</h1>
+            <p>find fast and easy</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="search-container">
+            <select class="search-input" id="hospitalSelect">
+                <option value="">Select Hospital</option>
+                <option value="kims">KIMS Hospital</option>
+                <option value="aster">ASTER MIMS</option>
+                <option value="govt">Government Hospital</option>s
+                <option value="almas">ALMAS Hospital</option>
+                <option value="mkh">MKH Hospital</option>
+                <option value="Nadakkavil">NADAKKAVIL Hospital</option>
+                <option value="hms">HMS Hospital</option>
+            </select>
+            <select class="search-input" id="specialitySelect">
+                <option value="">Select Speciality</option>
+                <option value="cardiology">Cardiology</option>
+                <option value="orthopedics">Orthopedics</option>
+                <option value="pediatrics">Pediatrics</option>
+                <option value="general">General Medicine</option>
+                <option vALUE="neurology">Neurology</option>
+                <option value="psychiatry">Psychiatry</option>
+                <option value="urology">Urology</option>
+                <option value="gynaecologist">Gynaecologist</option>
+            </select>
+            <input type="date" class="search-input" id="dateSelect">
+            <button class="search-button" onclick="searchDoctors()">Find Doctors</button>
+            <link rel="stylesheet" href="style.css">
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+
+    <div id="slider">  
+    <div class="slides">  
+      <img src="assets/download.jpg" width="100%" />
+     </div>
+      
+      <div class="slides">  
+      <img src="assets\SM302147.jpg" width="100%" />
+    </div>
+      
+      <div class="slides">  
+      <img src="assets\SM380661.jpg" width="100%" />
+    </div> 
+      
+       <div class="slides">  
+      <img src="assets\SM570351.jpg" width="100%" />
+    </div> 
+      
+       <div class="slides">  
+      <img src="assets\SM636530.jpg" width="100%" />
+    </div>  
+      
+     </div>
+    
+    <!-- Booking Modal -->
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Book Appointment</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="patientName">Full Name</label>
+                    <input type="text" id="patientName" required>
+                </div>
+                <div class="form-group">
+                    <label for="patientPhone">Phone Number</label>
+                    <input type="tel" id="patientPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="patientEmail">Email</label>
+                    <input type="email" id="patientEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointmentDate">Preferred Date</label>
+                    <input type="date" id="appointmentDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="appointmentTime">Preferred Time</label>
+                    <select id="appointmentTime" required>
+                        <option value="">Select Time</option>
+                        <option value="09:00">09:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="14:00">02:00 PM</option>
+                        <option value="15:00">03:00 PM</option>
+                        <option value="16:00">04:00 PM</option>
+                    </select>
+                </div>
+                <button type="submit" class="book-btn">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We help you find and book appointments with the best doctors in Malappuram.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>📞 +91 495 123 4567</li>
+                    <li>✉️ info@drcare.com</li>
+                    <li>🏢 Malappuram, Kerala</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#doctors">Find Doctors</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 dr.care. All rights reserved.</p>
+        </div>
+    </footer>
+
+   
+</body>
+</html>
