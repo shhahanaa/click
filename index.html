@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="./intex.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Malappuram Doctor Appointment</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="nav-container">
-            <div class="logo">MediCare</div>
+                   <div  class="logo">Dr.Care</div>
             <nav class="nav-links">
                 <a href="#home">Home</a>
                 <a href="#doctors">Find Doctors</a>
@@ -23,8 +27,8 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Find & Book Doctor Appointments</h1>
-            <p>Connect with the best doctors in Malappuram for quality healthcare</p>
+            <h1>Dr.Care</h1>
+            <p>find fast and easy</p>
         </div>
     </section>
 
@@ -34,8 +38,12 @@
             <select class="search-input" id="hospitalSelect">
                 <option value="">Select Hospital</option>
                 <option value="kims">KIMS Hospital</option>
-                <option value="aster">Aster MIMS</option>
-                <option value="govt">Government Hospital</option>
+                <option value="aster">ASTER MIMS</option>
+                <option value="govt">Government Hospital</option>s
+                <option value="almas">ALMAS Hospital</option>
+                <option value="mkh">MKH Hospital</option>
+                <option value="Nadakkavil">NADAKKAVIL Hospital</option>
+                <option value="hms">HMS Hospital</option>
             </select>
             <select class="search-input" id="specialitySelect">
                 <option value="">Select Speciality</option>
@@ -43,22 +51,42 @@
                 <option value="orthopedics">Orthopedics</option>
                 <option value="pediatrics">Pediatrics</option>
                 <option value="general">General Medicine</option>
+                <option vALUE="neurology">Neurology</option>
+                <option value="psychiatry">Psychiatry</option>
+                <option value="urology">Urology</option>
+                <option value="gynaecologist">Gynaecologist</option>
             </select>
             <input type="date" class="search-input" id="dateSelect">
             <button class="search-button" onclick="searchDoctors()">Find Doctors</button>
+            <link rel="stylesheet" href="style.css">
         </div>
     </section>
 
     <!-- Doctors Section -->
-    <section class="doctors-section" id="doctors">
-        <div class="section-title">
-            <h2>Available Doctors</h2>
-        </div>
-        <div class="doctors-grid" id="doctorsGrid">
-            <!-- Doctors will be added here dynamically -->
-        </div>
-    </section>
 
+    <div id="slider">  
+    <div class="slides">  
+      <img src="assets/download.jpg" width="100%" />
+     </div>
+      
+      <div class="slides">  
+      <img src="assets\SM302147.jpg" width="100%" />
+    </div>
+      
+      <div class="slides">  
+      <img src="assets\SM380661.jpg" width="100%" />
+    </div> 
+      
+       <div class="slides">  
+      <img src="assets\SM570351.jpg" width="100%" />
+    </div> 
+      
+       <div class="slides">  
+      <img src="assets\SM636530.jpg" width="100%" />
+    </div>  
+      
+     </div>
+    
     <!-- Booking Modal -->
     <div class="modal" id="bookingModal">
         <div class="modal-content">
@@ -109,7 +137,7 @@
                 <h3>Contact</h3>
                 <ul>
                     <li>📞 +91 495 123 4567</li>
-                    <li>✉️ info@medicare.com</li>
+                    <li>✉️ info@drcare.com</li>
                     <li>🏢 Malappuram, Kerala</li>
                 </ul>
             </div>
@@ -124,10 +152,10 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 MediCare. All rights reserved.</p>
+            <p>&copy; 2025 dr.care. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+   
 </body>
 </html>
